@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>讲师列表页</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <link rel="stylesheet" href="css/teacherList.css">
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+
+</head>
+<body>
+<div id="main">
+    <header id="header">
+        <div>
+            <span class="span1"> <a href="teacherRecommend.html"> < | </a></span>
+            <span class="span2">搜索结果</span>
+        </div>
+    </header>
+    <section id="content">
+        <div id="tuijian">
+            <p>共搜索到两个讲师</p>
+        </div>
+        <div class="teacherInformation">
+            <img src="img/teacherHead.jpg" alt="">
+            <p>罗老师</p>
+            <p>10年开发经验，曾任职多家企业，也担任过大型IT公司学术经理除了过人的技术水平，还有多年的授课经验，人称JAVA大神，实践与理论相结合，敲代码的速度奇快无比</p>
+            <p class="p1"><span>即将开始</span>css基础样式 盒模型</p>
+            <p class="p1"><span>正在进行</span>使用simpleJdbc Template</p>
+            <p class="p1 p2 p3"><span>约课中</span>物联网wifi应用</p>
+            <p class="p2"><span>已结束</span>启动子线程的三种方式</p>
+        </div>
+        <div class="background"></div>
+        <div class="teacherInformation">
+            <img src="img/teacherHead.jpg" alt="">
+            <p>罗老师</p>
+            <p>10年开发经验，曾任职多家企业，也担任过大型IT公司学术经理除了过人的技术水平，还有多年的授课经验，人称JAVA大神，实践与理论相结合，敲代码的速度奇快无比</p>
+            <p class="p1"><span>即将开始</span>css基础样式 盒模型</p>
+            <p class="p1"><span>正在进行</span>使用simpleJdbc Template</p>
+            <p class="p1 p2 p3"><span>约课中</span>物联网wifi应用</p>
+            <p class="p2"><span>已结束</span>启动子线程的三种方式</p>
+        </div>
+        <div class="background"></div>
+    </section>
+</div>
+</body>
+</html>

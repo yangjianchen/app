@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <link rel="stylesheet" href="css/lesson.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/friend.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script>
+        window.onload = function () {
+                var html=document.documentElement;
+                var htmlWidth=html.getBoundingClientRect().width;
+                //console.log(htmlWidth);
+                htmlWidth=htmlWidth>750?750:htmlWidth;
+                html.style.fontSize=htmlWidth/15+'px';
+
+            var payBtn = document.getElementById('payBtn');
+            var pay = document.getElementById('pay');
+            var payCancel = document.getElementById('payCancel');
+            var add = document.getElementById('add');
+            var rus = document.getElementById('rus');
+            var payNumber = document.getElementById('payNumber');
+            var signUp = document.getElementById('signUp');
+            var signUpDiv = document.getElementById('signUpDiv');
+            var signUpDivCancel = document.getElementById('signUpDivCancel');
+            var signUpAdd = document.getElementById('signUpAdd');
+            var signUpRus = document.getElementById('signUpRus');
+            var signUpPayNumber = document.getElementById('signUpPayNumber');
+            var limit = document.getElementById('limit');
+            var blackBackground = document.getElementById('blackBackground');
+            var footer = document.getElementById('footer');
+            var buyNumber = document.getElementById('buyNumber');
+            var signUpTuition = document.getElementById('signUpTuition');
+            var jiushi = document.getElementById('jiushi');
+            var yibaiba = document.getElementById('yibaiba');
+            var erbaiqi = document.getElementById('erbaiqi');
+            var already = document.getElementById('already');
+            var onceClass = document.getElementById('onceClass');
+
+
+//---------------------------------------------------------缴纳学费
+            payBtn.onclick = function () {
+                pay.style.display = 'block';
+                blackBackground.style.display = 'block';
+                blackBackground.style.height =  '112.4rem'
+
+            };
+            payCancel.onclick = function () {
+                pay.style.display = 'none';
+                blackBackground.style.display = 'none';
+                blackBackground.style.height =  '120rem'
+            };
+//------------------------------------------------------缴纳学费窗口
+            add.onclick = function () {
+                payNumber.innerHTML ++;
+            };
+            rus.onclick = function () {
+                payNumber.innerHTML --;
+//                clearInterval(time);
+                if( payNumber.innerHTML<1){
+                    buyNumber.style.display = 'block';
+
+                    var time = setInterval(function () {
+                        clearInterval(time);
+                        buyNumber.style.display = 'none'
+                    },1000);
+
+                    payNumber.innerHTML = 1
+                };
+            };
+            blackBackground.onclick = function () {
+                pay.style.display = 'none';
+                signUpDiv.style.display = 'none';
+                blackBackground.style.display = 'none'
+            };
+            signUp.onclick = function () {
+                signUpDiv.style.display = 'block';
+                blackBackground.style.display = 'block';
+            };
+            signUpDivCancel.onclick = function () {
+                signUpDiv.style.display = 'none';
+                blackBackground.style.display = 'none'
+            };
+
+            function fn(a,b,c,d) {
+                d.onclick = function () {
+                    a.className = "redBackground";
+                    b.className = " ";
+                    c.className = " ";
+                }
+            }
+            fn(yibaiba,jiushi,erbaiqi,yibaiba);
+            fn(erbaiqi,jiushi,yibaiba,erbaiqi);
+            fn(jiushi,yibaiba,erbaiqi,jiushi);
+//----------------------------------------------------------我要报名
+            signUpAdd.onclick = function () {
+                signUpPayNumber.innerHTML ++;
+                signUpTuition.innerHTML = parseInt(signUpPayNumber.innerHTML)*300 + '.00';
+                if( signUpPayNumber.innerHTML > parseInt(limit.innerHTML)){
+                    signUpPayNumber.innerHTML = limit.innerHTML;
+                    signUpTuition.innerHTML =  parseInt(limit.innerHTML)*300 + '.00'
+                }
+            };
+            signUpRus.onclick = function () {
+                signUpPayNumber.innerHTML --;
+                signUpTuition.innerHTML = parseInt(signUpPayNumber.innerHTML)*300 + '.00';
+                if( signUpPayNumber.innerHTML<1){
+                    signUpPayNumber.innerHTML = 1;
+                    signUpTuition.innerHTML = 300 + '.00'
+                }
+            };
+//---------------------------------------------------------------立即约课
+            onceClass.onclick = function () {
+                already.innerText = signUpPayNumber.innerText;
+                blackBackground.style.display = 'none';
+                signUpDiv.style.display = 'none';
+                signUpPayNumber.innerText = 1
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div class="lesson-body">
+    <!-----------------------------------------头部-->
+    <header class="header">
+        <a href="index.html" class="home"><i class="fa fa-home"></i></a>
+        <p class="friend-title">课程</p>
+        <a href="#" class="refresh"><i class="fa fa-comment"></i></a>
+    </header>
+    <!-----------------------------------------页面内容-->
+    <section>
+        <img src="img/head.jpg" alt="" style="width: 100%">
+        <div id="comeDFRZ">
+            <p>来东方锐智，开启高薪任意门</p>
+        </div>
+        <div id="threePoint">
+
+        </div>
+        <div id="content">
+            <p class="p1">JAVA精品课程专题</p>
+            <p class="p2"><a href="personTeacher.html">讲师： 张老师 邱老师 詹老师</a> </p>
+            <p class="p3">
+                <span class="span1">即将开始</span>
+                <span class="span2">必修课</span>
+            </p>
+            <p class="p4">举办方 ： 东方锐智科技有限公司</p>
+            <hr>
+            <p class="p5">
+                <span class="span1">预告费用/全额费用：</span>
+                <img src="img/price.png" alt="">
+                <span class="span2">30000</span>
+                <span class="span4">/</span>
+                <img src="img/price.png" alt="">
+                <span class="span3">40000</span>
+            </p>
+            <p class="p6">完成课程专题赠100奖积分</p>
+            <button class="btn btn-lg" id="payBtn">缴纳学费</button>
+        </div>
+        <div class="greyBackground"></div>
+        <div id="content2">
+            <p class="p1">第一节、使用SimpleJdbcTemplate和泛型技术简化代码</p>
+            <p class="p2">讲师：詹老师</p>
+            <p class="p3">开课时间：2011.02.02-2011.02.02</p>
+            <p class="p4">开课地点：福州市万福中心6楼601</p>
+            <p class="p5">
+                <span class="span1">单节课程费用：</span>
+                <img src="img/price.png" alt="">
+                <span class="span2">300</span>
+                <span class="span3">赠10学分</span>
+            </p>
+            <p class="p6">已占席位<span id="already">10</span>人/限<span id="limit">10</span>人参加</p><span></span>
+            <p class="p7">
+                <span class="span1">即将开始</span>
+                <span id="signUp" class="span2" style="margin-right: 1.5rem">报名</span>
+            </p>
+            <hr>
+            <p id="alreadySingUp" class="p8"><a href="register.html">已报名人员名单（30人）<span class="glyphicon glyphicon-chevron-right"></span></a></p>
+
+            <!--<p class="p9">课程专题页面</p>-->
+        </div>
+    </section>
+    <!-----------------------------------------缴纳学费-->
+    <div id="pay">
+        <p class="p1">学费<span id="payCancel">X</span></p>
+        <p class="p2"> <img src="img/price.png" alt=""><span id="tuition">3000.00</span></p>
+        <p class="p3">请根据你的需要，挑选学习周期</p>
+        <p class="p4">下单后，不可更改哦！</p>
+        <p class="p5">
+            <span class="span1 redBackground" id="jiushi">90天</span>
+            <span class="span2" id="yibaiba">180天</span>
+            <span class="span3" id="erbaiqi">270天</span>
+        </p>
+        <p class="p6">
+            <span class="span1">购买数量</span>
+            <button id="add">+</button>
+            <span id="payNumber">1</span>
+            <button id="rus">-</button>
+            <span class="btn btn-lg">立即约课</span>
+        </p>
+    </div>
+    <!-----------------------------------------我要报名-->
+    <div id="signUpDiv">
+        <p class="p1">我要报名：单节课学费<span id="signUpDivCancel">X</span></p>
+        <p class="p2"> <img src="img/price.png" alt=""><span id="signUpTuition">300.00</span></p>
+        <p class="p3">
+            <span class="span1">购买数量(参与人数)</span>
+            <button id="signUpAdd">+</button>
+            <span id="signUpPayNumber">1</span>
+            <button id="signUpRus">-</button>
+            <span class="btn btn-lg" id="onceClass">立即约课</span>
+        </p>
+    </div>
+    <!-----------------------------------------遮罩层-->
+    <div id="blackBackground">
+    </div>
+    <!-----------------------------------------购买数量小于1时弹出框-->
+    <span class="btn btn-lg" id="buyNumber">购买数量不能小于1</span>
+    <footer class="tab-bar tab-bottom" >
+        <a class="tab-button " href="index.html" ><i class="tab-button-icon fa fa-home"></i><span class="tab-button-txt">首页</span></a>
+        <a class="tab-button active " href="javascript:;"><i class="tab-button-icon fa fa-edit" style="background-size:30px"></i><span class="tab-button-txt">课程</span></a>
+        <a class="tab-button " href="friend.html"><i class="tab-button-icon fa fa-comment"></i><span class="tab-button-txt">同学圈</span></a>
+        <a class="tab-button " href="myself.html"><i class="tab-button-icon fa fa-user"></i><span class="tab-button-txt">我的</span></a>
+    </footer>
+</div>
+
+</body>
+</html>

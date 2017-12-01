@@ -1,0 +1,437 @@
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+  padding: 0;
+}
+body* {
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+}
+a:focus {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lesson-body {
+  width: 15rem;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 2.2rem;
+  padding-top: 2.06rem;
+}
+#header p {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+#headPhoto {
+  width: 15rem;
+}
+#comeDFRZ {
+  width: 15rem;
+  height: 2.1rem;
+  background-color: yellow;
+}
+#comeDFRZ p {
+  margin: 0;
+  font-family: 微软雅黑;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+#threePoint {
+  width: 15rem;
+  height: 0.75rem;
+  background-color: #b92c28;
+}
+/*--------------------------------------------------content内容*/
+#content .p1 {
+  margin: 0;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.3rem;
+}
+#content .p2 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+}
+#content .p3 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: orange;
+}
+#content .p3 .span2 {
+  width: 3rem;
+  margin-right: 0.6rem;
+  font-size: 0.3rem;
+  color: white;
+  float: right;
+  background-color: #b92c28;
+}
+#content .p4 {
+  margin: 0;
+  font-size: 0.52rem;
+  padding: 0.15rem 0.3rem;
+}
+#content .p5 {
+  /*vertical-align:middle;*/
+  line-height: 0.66rem;
+}
+#content .p5 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+}
+#content .p5 .span2 {
+  margin: 0;
+  font-size: 0.5rem;
+  color: orange;
+}
+#content .p5 .span3 {
+  margin: 0;
+  font-size: 0.5rem;
+  color: #7f7f7f;
+  text-decoration: line-through;
+}
+#content .p5 .span4 {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #7f7f7f;
+}
+#content .p5 img {
+  width: 0.54rem;
+  height: 0.54rem;
+}
+#content .p6 {
+  margin: 0;
+  font-size: 0.52rem;
+  padding: 0.15rem 0.3rem;
+}
+.btn-lg {
+  background-color: orange;
+  width: 14.4rem;
+  margin-left: 0.3rem;
+  color: white;
+}
+.greyBackground {
+  width: 15rem;
+  height: 0.3rem;
+  background-color: #c0c0c0;
+  margin: 0.3rem 0;
+}
+#content2 .p1 {
+  margin: 0;
+  font-size: 0.58rem;
+  padding: 0.15rem 0.3rem;
+}
+#content2 .p2 {
+  margin: 0;
+  font-size: 0.5rem;
+  color: #7f7f7f;
+  padding: 0.15rem 0.3rem;
+}
+#content2 .p3 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#content2 .p4 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#content2 .p5 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0 0.15rem 0.3rem;
+}
+#content2 .p5 .span2 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0;
+}
+#content2 .p5 .span3 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 3rem;
+}
+#content2 .p5 img {
+  width: 0.54rem;
+  height: 0.54rem;
+}
+#content2 .p6 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#content2 .p7 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: orange;
+  height: 1.05rem;
+  line-height: 1.05rem;
+}
+#content2 .p7 .span2 {
+  width: 2.4rem;
+  height: 1.05rem;
+  border: 2px solid #7f7f7f;
+  font-size: 0.5rem;
+  color: #7f7f7f;
+  float: right;
+  text-align: center;
+  line-height: 1.05rem;
+  margin-right: 0.6rem;
+}
+hr {
+  background-color: #7f7f7f;
+}
+#content2 .p8 {
+  margin: 0;
+  font-size: 0.58rem;
+  padding: 0.15rem 0.3rem;
+  cursor: pointer;
+}
+#content2 .p8 span {
+  font-size: 0.58rem;
+  padding: 0.15rem 0.3rem;
+  float: right;
+  margin-right: 0.3rem;
+}
+#content2 .p9 {
+  margin: 0;
+  font-size: 0.64rem;
+  padding: 0.15rem 0.3rem;
+  font-weight: 700;
+}
+/*---------------------------------------------------------缴纳学费--*/
+#pay {
+  width: 15rem;
+  background-color: white;
+  position: absolute;
+  top: 22.05rem;
+  border: 1px solid #7f7f7f;
+  display: none;
+  z-index: 102;
+}
+#pay .p1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#pay .p2 {
+  margin: 0;
+  padding: 0.15rem 0 0.15rem 0.3rem;
+}
+#pay .p2 img {
+  width: 0.54rem;
+  height: 0.54rem;
+}
+#pay .p2 span {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+  line-height: 0.6rem;
+}
+#pay .p3 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+  font-family: "微软雅黑";
+}
+#pay .p4 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+  font-family: "微软雅黑";
+}
+#pay .p5 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#pay .p5 span {
+  width: 2.4rem;
+  height: 1.05rem;
+  border: 2px solid #7f7f7f;
+  font-size: 0.5rem;
+  color: #7f7f7f;
+  padding: 0.15rem 0.3rem;
+  text-align: center;
+  line-height: 1.05rem;
+  margin: 0.3rem 0.3rem;
+}
+#pay .p6 {
+  margin: 0;
+  padding: 0.15rem 0.3rem;
+  font-size: 0.64rem;
+}
+#pay .p6 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  line-height: 0.9rem;
+}
+#pay .p6 button {
+  width: 0.9rem;
+  height: 0.9rem;
+  float: right;
+}
+#payNumber {
+  float: right;
+  width: 1.2rem;
+  text-align: center;
+}
+#pay .btn-lg {
+  background-color: #b92c28;
+  margin: 0.3rem 0;
+}
+#payCancel {
+  float: right;
+  font-size: 0.64rem;
+  padding: 0.15rem 0.3rem;
+}
+/*-----------------------------------------------我要报名*/
+#signUpDiv {
+  width: 15rem;
+  background-color: white;
+  position: absolute;
+  top: 29rem;
+  border: 1px solid #7f7f7f;
+  display: none;
+  margin-bottom: 1.89rem;
+  z-index: 102;
+}
+#signUpDiv .p1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+}
+#signUpDiv .p2 {
+  margin: 0;
+  padding: 0.15rem 0 0.15rem 0.3rem;
+}
+#signUpDiv .p2 img {
+  width: 0.54rem;
+  height: 0.54rem;
+}
+#signUpDiv .p2 span {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: #7f7f7f;
+  line-height: 0.6rem;
+}
+#signUpDiv .p3 .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  line-height: 0.9rem;
+}
+#signUpDiv .p3 button {
+  width: 0.9rem;
+  height: 0.9rem;
+  float: right;
+  font-size: 0.54rem;
+}
+#signUpPayNumber {
+  float: right;
+  width: 1.2rem;
+  text-align: center;
+}
+#signUpDiv .btn-lg {
+  background-color: #b92c28;
+  margin: 0.3rem 0;
+}
+#signUpAdd {
+  margin-right: 0.6rem;
+}
+#signUpPayNumber {
+  /*float: right;*/
+  width: 1.2rem;
+  font-size: 0.54rem;
+  text-align: center;
+}
+#signUpDivCancel {
+  float: right;
+  font-size: 0.64rem;
+  padding: 0.15rem 0.3rem;
+}
+/*----------------------------------------------------------底部*/
+#footer {
+  width: 15rem;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  top: 19.26rem;
+  border: 1px solid #7f7f7f;
+  padding: 0.3rem;
+}
+#footer > div {
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+#footer > div p {
+  text-align: center;
+  font-size: 0.6rem;
+  margin: 0;
+}
+#blackBackground {
+  display: none;
+  width: 15rem;
+  /*height: 112.4rem;*/
+  height: 36rem;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  background-color: black;
+  z-index: 101;
+}
+#buyNumber {
+  position: fixed;
+  top: 12rem;
+  background-color: green;
+  height: 1.5rem;
+  line-height: 1.05rem;
+  display: none;
+  z-index: 110;
+}
+.redBackground {
+  background-color: #b92c28;
+}

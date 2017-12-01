@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/myMessage.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+</head>
+<body >
+
+<!--主体部分-->
+<div class="friend-main">
+    <header class="header">
+        <a href="friend.html" class="home"><i class="fa fa-mail-reply"></i></a>
+        <p class="friend-title">详细信息</p>
+    </header>
+    <div class="myMessage-body">
+        <div class="user-head">
+            <div class="user-head-left">
+                <span>用户头像</span>
+            </div>
+            <div class="user-head-right">
+                <img src="images/touxiang2.jpg" alt="">
+            </div>
+        </div>
+        <div class="user-num">
+            <p> <span>账户</span> <span>13285906921</span></p>
+        </div>
+        <div class="user-num">
+            <p> <span>昵称</span> <span>小文艺</span></p>
+        </div>
+        <div class="user-message">
+            <span>圈子信息</span>
+            <div class="user-photo">
+                <img src="images/y1.jpeg" alt="">
+                <img src="images/touxiang3.jpg" alt="">
+                <img src="images/tx3.jpg" alt="">
+                <img src="images/th1.jpg" alt="">
+            </div>
+        </div>
+        <div class="user-help">
+            <span>帮助与反馈</span>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

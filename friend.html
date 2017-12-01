@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/friend.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+</head>
+<body >
+
+<!--主体部分-->
+<div class="friend-main">
+    <header class="header">
+        <a href="index.html" class="home"><i class="fa fa-home"></i></a>
+        <p class="friend-title">朋友圈</p>
+        <a href="#" class="refresh"><i class="fa fa-camera"></i></a>
+    </header>
+    <div class="friend-img">
+        <img src="images/fengjing.jpg" alt="">
+        <div class="friend-name">小清新</div>
+        <div class="friend-show"><a href="myfriend.html"></a></div>
+    </div>
+    <div>
+        <div class="contain" style="margin: 40px 0 0;">
+            <ul>
+                <li>
+                    <div class="body">
+                        <div class="logo">
+                            <a href="otherMessage.html"><img src="images/touxiang2.jpg"></a>
+                        </div>
+                        <div class="text">
+                            <div class="title">小黄人</div>
+                            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务，但Cylons起来反抗人类，双方在血战之后停火，Cylons离开了殖民地去建立自己的家园。40年的和平让<span id="p1">...</span><span id="txt1" style="display:none;">人类放松了警惕，Cylons通过人类内部的间谍瘫痪了人类的防御系统，摧毁了Battlestar舰队，用核武器将殖民地的城市化为灰烬。Battlestar Galactica是唯一一艘幸存的航母，它在舰长Adama的指挥下带领几十艘各式各样的民船和近5万名幸存者逃离了殖民地的行星系统，开始了寻找人类的第13个殖民地——地球——的旅程。</span></div>
+                            <div style="color: #88B1C5;">全文</div>
+                            <div class="my-gallery" data-pswp-uid="1">
+                                <figure><span>
+							  <a href="#" data-size="670x712">
+							  <img style="width:80%;" src="images/th1.jpg">
+							  </a></span>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">1分钟前</div>
+                                <div class="fr"><i class="fa fa-comment" style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav line"><i class="iconfont">&#xe616;</i>小豪,李小爱</div>
+                                <div><span>小豪：</span>什么</div>
+                                <div><span>淘淘：</span>I use owl carousel to generate a slider, but at the same time I want to use Photoswipe, but I can't. When I use the Owl carousel plugin, the slider's inserted into the code with a speciel markup, where each item (image) has a class of .item and the image is located 3 layers deep into that div.</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="body">
+                        <div class="logo"><img src="images/touxiang3.jpg"></div>
+                        <div class="text">
+                            <div class="title">小清新</div>
+                            <div class="txt">买了一个更帅的电饭锅，可以手机远程操制的，开心</div>
+                            <!--data-pswp-uid 是每个gallery的id不能重复-->
+                            <div class="my-gallery" >
+                                <figure>
+                                    <div><a href="#" data-size="286x220"><img  src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="640x426"><img  src="images/sb1.jpg"></a></div>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">2分钟前</div>
+                                <div class="fr"><i class="fa fa-comment " style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav"><i class="iconfont">&#xe616;</i><span>ANTHONY,</span> <span>☆Sanly☆</span></div>
+                                <div><span>ANTHONY：</span>这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服</div>
+                                <div><span>☆Sanly☆:</span>远程？还有洗米放水功能？</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="body">
+                        <div class="logo"><img src="images/touxiang.jpg"></div>
+                        <div class="text">
+                            <div class="title">小清新</div>
+                            <div class="txt">买了一个更帅的电饭锅，可以手机远程操制的，开心</div>
+                            <!--data-pswp-uid 是每个gallery的id不能重复-->
+                            <div class="my-gallery">
+                                <figure>
+                                    <div><a href="#" data-size="286x220"><img  src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="640x426"><img  src="images/sb1.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/y1.jpeg"></a></div>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">2分钟前</div>
+                                <div class="fr"><i class="fa fa-comment " style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav"><i class="iconfont">&#xe616;</i><span>ANTHONY,</span> <span>☆Sanly☆</span></div>
+                                <div><span>ANTHONY：</span>这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服</div>
+                                <div><span>☆Sanly☆:</span>远程？还有洗米放水功能？</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="body">
+                        <div class="logo"><img src="images/touxiang.jpg"></div>
+                        <div class="text">
+                            <div class="title">小清新</div>
+                            <div class="txt">买了一个更帅的电饭锅，可以手机远程操制的，开心</div>
+                            <!--data-pswp-uid 是每个gallery的id不能重复-->
+                            <div class="my-gallery">
+                                <figure>
+                                    <div><a href="#" data-size="286x220"><img  src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="640x426"><img  src="images/sb1.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/y1.jpeg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/y1.jpeg"></a></div>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">2分钟前</div>
+                                <div class="fr"><i class="fa fa-comment " style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav"><i class="iconfont">&#xe616;</i><span>ANTHONY,</span> <span>☆Sanly☆</span></div>
+                                <div><span>ANTHONY：</span>这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服</div>
+                                <div><span>☆Sanly☆:</span>远程？还有洗米放水功能？</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="body">
+                        <div class="logo"><img src="images/touxiang.jpg"></div>
+                        <div class="text">
+                            <div class="title">小清新</div>
+                            <div class="txt">买了一个更帅的电饭锅，可以手机远程操制的，开心</div>
+                            <!--data-pswp-uid 是每个gallery的id不能重复-->
+                            <div class="my-gallery" data-pswp-uid="2">
+                                <figure>
+                                    <div><a href="#" data-size="286x220"><img  src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="640x426"><img  src="images/sb1.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="768x1024"><img src="images/sb3.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="900x596"><img  src="images/sb4.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/y1.jpeg"></a></div>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">2分钟前</div>
+                                <div class="fr"><i class="fa fa-comment " style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav"><i class="iconfont">&#xe616;</i><span>ANTHONY,</span> <span>☆Sanly☆</span></div>
+                                <div><span>ANTHONY：</span>这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服</div>
+                                <div><span>☆Sanly☆:</span>远程？还有洗米放水功能？</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="body">
+                        <div class="logo"><img src="images/touxiang.jpg"></div>
+                        <div class="text">
+                            <div class="title">小清新</div>
+                            <div class="txt">买了一个更帅的电饭锅，可以手机远程操制的，开心</div>
+                            <!--data-pswp-uid 是每个gallery的id不能重复-->
+                            <div class="my-gallery" data-pswp-uid="2">
+                                <figure>
+                                    <div><a href="#" data-size="286x220"><img  src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="640x426"><img  src="images/sb1.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="768x1024"><img src="images/sb3.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="900x596"><img  src="images/sb4.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/y1.jpeg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/sb4.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/s5.jpg"></a></div>
+                                </figure>
+                                <figure>
+                                    <div><a href="#" data-size="1200x1200"><img src="images/sb1.jpg"></a></div>
+                                </figure>
+                            </div>
+                            <div class="tm">
+                                <div class="fl">2分钟前</div>
+                                <div class="fr"><i class="fa fa-comment" style="color: rgb(138,138,138)"></i></div>
+                                <div class="ft">
+                                    <span class="ft-heart"><i class="fa fa-comment">点赞</i></span>
+                                    <span class="btn-comment"><i class="fa fa-apple">评论</i></span>
+                                </div>
+                            </div>
+                            <div class="cmt">
+                                <div class="fav"><i class="iconfont">&#xe616;</i><span>ANTHONY,</span> <span>☆Sanly☆</span></div>
+                                <div><span>ANTHONY：</span>这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服</div>
+                                <div><span>☆Sanly☆:</span>远程？还有洗米放水功能？</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="tab-bar tab-bottom" >
+        <a class="tab-button " href="index.html" ><i class="tab-button-icon fa fa-home"></i><span class="tab-button-txt">首页</span></a>
+        <a class="tab-button " href="lesson.html"><i class="tab-button-icon fa fa-edit" style="background-size:30px"></i><span class="tab-button-txt">课程</span></a>
+        <a class="tab-button active" href="javascript:;"><i class="tab-button-icon fa fa-comment"></i><span class="tab-button-txt">同学圈</span></a>
+        <a class="tab-button " href="myself.html"><i class="tab-button-icon fa fa-user"></i><span class="tab-button-txt">我的</span></a>
+    </footer>
+    <div class="comment">
+        <input  class="comment-message" type="text">
+        <input type="button" class="btn btn-default col-lg-3 btn-lg" value="发送">
+    </div>
+    <div class="background-body">
+        <div class="background">
+
+        </div>
+        <div class="background-photo">
+            <a>用手机拍照</a>
+            <a href="editor.html">从相册里选择</a>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('.tab-bar .tab-button').each(function () {
+        $(this).on('click',function (){
+            $('.tab-button').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+    $('.my-gallery').each(function () {
+        var cWidrh=$(this).children().length;
+      if(cWidrh==4){
+          $(this).css('width','70%');
+          $(this).find('figure').children().css('width','3.2rem');
+      }
+   });
+
+    $('.fr').each(function (i) {
+        //console.log(i);
+        $(this).on('click',function () {
+            var num = $('.fr').length;
+            //console.log(i);
+            for (var j=0;j<num;j++)
+            {
+                if(j!=i){
+                    $('.fr').eq(j).next().hide();
+                }
+            }
+            $(this).next().toggle(function () {
+                $(this).next().show()
+            },function () {
+                $(this).next().hide()
+            })
+        })
+    });
+
+//    $('.tm').on('click','.fr',function () {
+//        $(this).closest('ul').find('.fr').not(this).next().hide()
+//        $(this).next().toggle();
+//    });
+     $('.ft-heart').each(function (i) {
+        var html ="";
+        var name=$('.friend-name').text();
+        $(this).on('click',function () {
+            html='<span>,'+name+'</span>';
+            $(this).parents('.tm').next().find('.fav').append(html);
+            $('.ft').hide();
+        })
+    });
+    $('.btn-comment').each(function (i) {
+        $(this).on('click',function () {
+            $('.comment').toggle(1000)
+       })
+    });
+    $('.refresh').click(function () {
+       $('.background-body').toggle(1);
+    });
+    $('.background').click(function () {
+        $('.background-body').hide();
+    })
+</script>
+</body>
+</html>

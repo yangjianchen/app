@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/editorAddress.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <script src="js/user.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+</head>
+<body >
+<div class="editorAddress-main">
+    <header class="header">
+        <a href="myself.html" class="return"><i class="fa fa-mail-reply"></i></a>
+        <p class="friend-title">地址管理</p>
+        <a href="addAddress.html" class="refresh"><button class="btn btn-primary save" style="width: 3rem">添加地址</button></i></a>
+    </header>
+    <div class="editorAddress-body">
+
+    </div>
+    <div class="background">
+        <i class="fa fa-smile-o" ></i>
+        <p>您还未添加地址信息，快添加吧！</p>
+    </div>
+</div>
+<script>
+    var ADDRESS_KEY = 'address';
+    var addressList = store.get(ADDRESS_KEY,[]);
+    var html = '';
+    var $dl=$('.editorAddress-body');
+    console.log(addressList);
+    function createAddress(address) {
+        var preCheck = '';
+        if (addressList[i].pre==1){
+            preCheck ='<span class="fa fa-check-square moren"></span>'
+        }else{
+            preCheck ='<span class="fa fa-square-o moren"></span>'
+        }
+        html =' <div class="address-body"> ' +
+                '<div class="address"> ' +
+                '<p class="name-tel"><span>'+address.username+'</span> <span>'+address.tel+'</span></p> ' +
+                '<p class="address-more">'+address.city+address.street+address.textarea+'</p> ' + '</div>' +
+                '<div class="address-editor" data-id="'+ address.id +'"> ' +
+                ''+preCheck+' <span>默认地址</span> ' +
+                '<p><a href="reviseAddress.html?id='+ address.id +'" class="editor" style="color: #fd5a1e">编辑</a> <span style="margin-left: 0.9rem" class="remove">删除</span></p> ' +
+                '</div> ' +
+                '</div>';
+        return html;
+    }
+    for( var i=0;i<addressList.length;i++){
+        html += createAddress(addressList[i]);
+    }
+    $dl.append(html);
+    $dl.on('click','.remove',function () {
+            var id = $(this).parents('.address-editor').data('id');
+            $(this).parents('.address-body').remove();
+            for(var i=0;i<addressList.length;i++){
+                if(addressList[i].id==id){
+                    addressList.splice(i,1);
+                    break;
+                }
+            }
+            store.update(ADDRESS_KEY,addressList);
+       if(addressList.length==0){
+           $('.background').show()
+       }else{
+           $('.background').hide()
+       }
+    });
+    $dl.on('click','.editor',function () {
+           window.location.href='reviseAddress.html'
+
+    });
+    var length=$dl.children().length;
+    //console.log( length);
+    if(length==0){
+        $('.background').show()
+    }else{
+        $('.background').hide()
+    }
+    $('.moren').each(function (i) {
+        //$('.moren').eq(0).attr('class','fa fa-check-square moren');
+        $(this).on('click',function () {
+            var num = $('.moren').length;
+            for (var j=0;j<num;j++){
+                addressList[j].pre='1';
+                $('.moren').eq(j).attr('class','fa fa-check-square moren');
+                if(j!=i){
+                    $('.moren').eq(j).attr('class','fa fa-square-o moren');
+                    addressList[j].pre='0';
+                }
+            }
+            store.update('address',addressList);
+        })
+    })
+</script>
+</body>
+</html>

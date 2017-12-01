@@ -1,0 +1,172 @@
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+  padding: 0;
+}
+body* {
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+h1 {
+  margin: 0;
+}
+p {
+  margin: 0 !important;
+}
+a {
+  text-decoration: none !important;
+}
+a:focus {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header {
+  width: 15.04rem;
+  height: 2.06rem;
+  background: #f5f5f5;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e1e1e1;
+  box-sizing: border-box;
+}
+.header .home {
+  width: 2.56rem;
+  height: 2.04rem;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 2.04rem;
+}
+.header .home i {
+  line-height: 2.1rem;
+  font-size: 0.96rem;
+  color: #fd5a1e;
+}
+.header .refresh {
+  width: 2.56rem;
+  height: 2.04rem;
+  text-align: center;
+  position: absolute;
+  right: 0.02rem;
+}
+.header .refresh i {
+  line-height: 1.9rem;
+  font-size: 0.86rem;
+  color: #fd5a1e;
+}
+.friend-main {
+  width: 15rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+  padding-top: 2.06rem;
+}
+.friend-title {
+  position: absolute;
+  left: 50%;
+  margin-left: -1.7rem !important;
+  line-height: 2.06rem;
+  font-size: 0.76rem;
+}
+.friend-img {
+  position: relative;
+}
+.friend-img img {
+  width: 15rem;
+  height: 8.44rem;
+}
+.friend-img .friend-show {
+  position: absolute;
+  right: 1rem;
+  bottom: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-size: 3rem 3rem;
+  background-image: url(../images/touxiang.jpg);
+  border-radius: 50%;
+}
+.friend-img .friend-show a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.friend-img .friend-name {
+  position: absolute;
+  right: 4.4rem;
+  font-family: "微软雅黑";
+}
+.myfriend-body {
+  margin-top: 2rem;
+}
+.myfriend-body li {
+  height: 4.6rem;
+}
+.message-body {
+  margin: 0.3rem;
+}
+.message-body .myfriend-day {
+  float: left;
+  width: 20%;
+}
+.message-body .myfriend-day h3 {
+  margin: 0;
+  font-weight: 400;
+}
+.message-body .myfriend-day span:nth-of-type(1) {
+  font-size: 1rem;
+}
+.message-body .myfriend-text {
+  font-size: 0.56rem;
+  float: left;
+  width: 78%;
+  padding: 0.3rem;
+}
+.message-body .myfriend-text .photo {
+  width: 30%;
+  float: left;
+  margin-right: 0.4rem;
+}
+.message-body .myfriend-text .photo .my-photo {
+  height: 1.36rem;
+  float: left !important;
+  margin: 0.1rem;
+}
+.message-body .myfriend-text .photo .my-photo img {
+  width: 1.3rem;
+  height: 1.36rem;
+}
+.message-body .myfriend-text p {
+  float: left;
+  width: 65%;
+}
+.message-body .myfriend-text-camera {
+  width: 4rem;
+  height: 4rem;
+  background: #e1e1e1;
+  float: left;
+  padding: 1.3rem 1.1rem;
+}
+.message-body .myfriend-text-camera i {
+  font-size: 1.6rem;
+}

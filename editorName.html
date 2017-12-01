@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/editorName.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <script src="js/user.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+</head>
+<body >
+<div class="editorAddress-main">
+    <header class="header">
+        <a href="myself.html" class="return"><i class="fa fa-mail-reply"></i></a>
+        <p class="friend-title">编辑姓名</p>
+        <a href="#" class="refresh"><button class="btn btn-primary save">保存</button></i></a>
+    </header>
+     <div class="editorAddress-body">
+         <input  type="text" class=" editorname form-control input-lg" >
+         <button class="close"> <i class="fa fa-close"></i></button>
+     </div>
+
+</div>
+
+<script>
+
+     $('.close').on('click',function () {
+        $('.editorname').val('')
+     });
+     $('.editorname').focus(function () {
+         $('.close').show();
+     })
+     $('.save').click(function () {
+         var username = $('.editorname').val()
+         alert('修改成功');
+         store.add('username',username)
+         window.location.href='myself.html'
+     })
+       var name=store.get('username')
+     $('.editorname').val(name)
+</script>
+</body>
+</html>

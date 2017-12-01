@@ -1,0 +1,143 @@
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+  padding: 0;
+}
+body* {
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+}
+a:focus {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#header {
+  width: 15rem;
+}
+a {
+  text-decoration: none;
+  color: #666699;
+}
+p {
+  font-size: 0.6rem;
+  margin: 0;
+}
+.personTeacher-body {
+  padding-top: 1.36rem;
+  width: 15rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+#header p {
+  margin: 0;
+  padding: 0.15rem;
+  font-size: 0.6rem;
+  color: #666699;
+}
+#header .more {
+  float: right;
+  color: orange;
+  margin-right: 0.3rem;
+}
+hr {
+  background-color: #7f7f7f;
+}
+.user {
+  text-align: center;
+  font-size: 0.6rem;
+}
+.glyphicon-user {
+  font-size: 2.4rem;
+}
+#section {
+  width: 15rem;
+}
+.background {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #CCCCCC;
+}
+.backgroundP {
+  line-height: 1.5rem;
+  margin-left: 0.3rem;
+}
+.curry {
+  padding: 0.3rem;
+}
+.caption {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.person {
+  margin-top: 0.6rem;
+}
+.javaEE {
+  width: 6rem;
+  float: left;
+}
+.onceStar .span1 {
+  margin: 0;
+  font-size: 0.5rem;
+  padding: 0.15rem 0.3rem;
+  color: orange;
+}
+.onceStar .span2 {
+  margin: 0;
+  margin-right: 0.6rem;
+  font-size: 0.5rem;
+  padding: 0.15rem;
+  color: white;
+  float: right;
+  background-color: #b92c28;
+}
+.wifi {
+  font-size: 0.6rem;
+  padding: 0.3rem 0.3rem;
+  display: inline-block;
+}
+.teacher {
+  font-size: 0.6rem;
+  padding: 0.3rem 0.3rem;
+  display: inline-block;
+  margin-bottom: 1.2rem;
+}
+.threeP {
+  display: block;
+  padding: 0.3rem 0.9rem;
+}
+.threeP1 {
+  margin-top: 1.2rem;
+}
+.backgroundGrey {
+  width: 100%;
+  height: 0.6rem;
+  background-color: #9d9d9d;
+}

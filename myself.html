@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的</title>
+    <link rel="stylesheet" href="css/myself.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="js/user.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        (function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        })();
+    </script>
+
+</head>
+<body >
+<div class="my-body">
+    <header class="header">
+        <a href="#" class="home"><i class="fa fa-cog"></i></a>
+        <a href="#" class="refresh"><i class="fa fa-comment"></i></a>
+    </header>
+    <div class="my-show">
+       <div class="my-show-message">
+         <div class="touxiang"></div>
+          <p ><span id="username"></span> <a href="editorName.html" style="color: white"><span  class="fa fa-edit"></span></a></p>
+           <span class="my-vip" style="background:none">普通学员&nbsp;|&nbsp;积分:590</span>
+       </div>
+    </div>
+    <div class="layout-column">
+            <a class="col"  rel="test" href="#">
+                 <i class="fa fa-star-o"></i>
+                <p class="img-icon-name">我的收藏</p>
+            </a>
+            <a class="col"  rel="test" href="#">
+                <i class="fa fa-money"></i>
+                <p class="img-icon-name">我的课程</p>
+            </a>
+            <a class="col" href="#" rel="test">
+               <i class="fa fa-envelope-square"></i>
+                <p class="img-icon-name">我的消息</p>
+            </a>
+    </div>
+    <div>
+        <div class="aui-list-cells">
+            <a href="editorTel.html" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-1.png"></div>
+                <div class="aui-list-cell-cn">我的手机号</div>
+                <div class="aui-list-cell-fr"><sapn class="telphone"></sapn></div>
+            </a>
+            <a href="editorAddress.html" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-2.png"></div>
+                <div class="aui-list-cell-cn">地址管理</div>
+                <div class="aui-list-cell-fr">福建省福州市台江区万福中心</div>
+            </a>
+            <a href="javascript:;" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-3.png"></div>
+                <div class="aui-list-cell-cn">是否使用密码</div>
+                <div class="aui-list-cell-fr"><i class="fa fa-toggle-off" style="font-size: 0.85rem;color: rgb(255,73,73)"></i></div>
+            </a>
+            <a href="editorPassword.html" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-4.png"></div>
+                <div class="aui-list-cell-cn">密码修改</div>
+                <div class="aui-list-cell-fr"></div>
+            </a>
+            <div class="devider b-line"></div>
+            <a href="javascript:;" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-5.png"></div>
+                <div class="aui-list-cell-cn">学员中心</div>
+                <div class="aui-list-cell-fr"></div>
+            </a>
+            <a href="javascript:;" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-6.png"></div>
+                <div class="aui-list-cell-cn">我的学分</div>
+                <div class="aui-list-cell-fr">0</div>
+            </a>
+            <div class="devider b-line"></div>
+            <a href="javascript:;" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-7.png"></div>
+                <div class="aui-list-cell-cn">我的订单</div>
+                <div class="aui-list-cell-fr"></div>
+            </a>
+            <a href="javascript:;" class="aui-list-cell">
+                <div class="aui-list-cell-fl"><img src="images/icon-png/icon-n-8.png"></div>
+                <div class="aui-list-cell-cn">浏览历史</div>
+                <div class="aui-list-cell-fr"></div>
+            </a>
+            <div class="devider b-line"></div>
+        </div>
+    </div>
+    <footer class="tab-bar tab-bottom" >
+        <a class="tab-button " href="index.html" ><i class="tab-button-icon fa fa-home"></i><span class="tab-button-txt">首页</span></a>
+        <a class="tab-button " href="lesson.html"><i class="tab-button-icon fa fa-edit" style="background-size:30px"></i><span class="tab-button-txt">课程</span></a>
+        <a class="tab-button " href="friend.html"><i class="tab-button-icon fa fa-comment"></i><span class="tab-button-txt">同学圈</span></a>
+        <a class="tab-button active" href="#"><i class="tab-button-icon fa fa-user"></i><span class="tab-button-txt">我的</span></a>
+    </footer>
+</div>
+<script>
+    var username= store.get('username');
+    var telphone= store.get('telphone');
+    console.log(username);
+    $('#username').text(username);
+    $('.telphone').text(telphone);
+    $('.fa-toggle-off').on('click',function () {
+        if($('.fa-toggle-off').attr('class')=='fa fa-toggle-off'){
+            $(this).attr('class','fa fa-toggle-on')
+        }else{
+            $(this).attr('class','fa fa-toggle-off');
+        }
+    })
+</script>
+</body>
+</html>

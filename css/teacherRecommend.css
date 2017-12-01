@@ -1,0 +1,118 @@
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+}
+body * {
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+#main {
+  width: 15rem;
+  margin: 0 auto;
+}
+#header span {
+  font-size: 0.9rem;
+  padding: 0.3rem;
+}
+#header input {
+  width: 9.9rem;
+  height: 0.9rem;
+  margin: 0.45rem;
+}
+#header .span1 {
+  float: left;
+}
+#header .span2 {
+  float: right;
+}
+#tuijian {
+  width: 15rem;
+  height: 1.5rem;
+  background-color: #CCCCCC;
+}
+#tuijian p {
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 0;
+}
+#teacherHead img {
+  /*float: left;*/
+  /*box-sizing: border-box;*/
+  width: 2.8rem;
+  height: 2.8rem;
+  margin: 0.33rem;
+}
+#teacherHead .p1 {
+  text-align: center;
+  margin: 0;
+}
+#teacherHead .p1 span {
+  margin: 0 0.42rem;
+  font-size: 0.7rem;
+  padding: 0.3rem;
+}
+#teacherHead .p2 {
+  margin-bottom: 0;
+}
+#jieshao {
+  width: 15rem;
+  height: 1.5rem;
+  background-color: #CCCCCC;
+  margin-top: 0.3rem;
+}
+#jieshao p {
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 0;
+}
+.teacherInformation img {
+  width: 3rem;
+  height: 3rem;
+  float: left;
+  margin: 1rem;
+  padding-bottom: 1.5rem;
+}
+.teacherInformation p {
+  font-size: 0.6rem;
+}
+.teacherInformation .p1 span {
+  color: orange;
+  padding: 0 0.3rem;
+}
+.teacherInformation .p2 span {
+  color: #9d9d9d;
+  padding: 0 0.3rem 0 0.9rem;
+}
+.teacherInformation .p1 {
+  margin: 0.15rem 0.6rem;
+}
+.teacherInformation .p2 {
+  margin: 0.15rem 0.6rem;
+}
+.teacherInformation .p3 span {
+  color: orange;
+}
+.background {
+  width: 15rem;
+  height: 0.6rem;
+  background-color: #9d9d9d;
+}
+#header a {
+  text-decoration: none;
+  color: #9d9d9d;
+}

@@ -1,0 +1,170 @@
+@r:50rem;
+a,input,button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a{
+  outline:none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input,
+button{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body{
+  margin: 0;
+  -webkit-user-select: none;
+  padding: 0;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+body*{
+  -webkit-user-select: none;
+  font-family: Helvetica;
+}
+body{
+  -webkit-text-size-adjust: 100%;
+}
+h1{
+  margin: 0;
+}
+p{
+  margin: 0 !important;
+}
+a{
+  text-decoration: none !important;
+}
+a:focus{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header{
+  width: 752/@r;
+  height: 103/@r;
+ background: white;
+  position: fixed;
+  top:0;
+  z-index: 1000;
+  border-bottom: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  .home{
+    width: 128/@r;
+    height: 102/@r;
+    position: absolute;
+    top:0;
+    text-align: center;
+    line-height: 102/@r;
+    i{
+      line-height: 105/@r;
+      font-size: 48/@r;
+      color: #fd5a1e;
+    }
+  }
+}
+.friend-main{
+  width: 750/@r;
+  margin: 0 auto;
+  overflow-y: scroll;
+  padding-top: 103/@r;
+  height: 100%;
+  background: rgb(240,240,240);
+  .friend-title{
+    position: absolute;
+    left: 16%;
+    line-height: 103/@r;
+    font-size: 34/@r;
+  }
+  .user-head{
+    margin-top:25/@r ;
+    width: 100%;
+    background: white;
+    height: 180/@r;
+    padding: 0 25/@r;
+    border-bottom: 1px solid #e3d2d2;
+    .user-head-left{
+      float: left;
+      span{
+        line-height: 180/@r;
+        font-size: 30/@r;
+      }
+    }
+    .user-head-right{
+      margin-top:15/@r ;
+      float: right;
+      width: 150/@r;
+      height: 150/@r;
+      border-radius:80/@r ;
+      overflow: hidden;
+      background-image: url("../images/touxiang.jpg");
+      background-size: 100%  auto;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .user-num{
+    width: 100%;
+    height: 100/@r;
+    background: white;
+    padding: 0 25/@r;
+    border-bottom: 1px solid #e3d2d2;
+    span{
+      line-height: 100/@r;
+    }
+    span:nth-of-type(1){
+      display: block;
+      float: left;
+      font-size: 30/@r;
+    }
+    span:nth-of-type(2){
+      display: block;
+      float: right;
+      font-size: 30/@r;
+    }
+  }
+  .user-message{
+    margin-top: 25/@r;
+    width: 100%;
+    height: 200/@r;
+    background: white;
+    padding: 0 25/@r;
+    border-bottom: 1px solid #e3d2d2;
+    span{
+      display: block;
+      float: left;
+      width: 20%;
+      line-height: 200/@r;
+      font-size: 30/@r;
+    }
+    .user-photo{
+      width: 80%;
+      height: 200/@r;
+      float: left;
+      img{
+        float: left;
+        width: 22%;
+        height: 150/@r;
+        margin: 25/@r 0 0 15/@r;
+      }
+    }
+  }
+  .user-help{
+    margin-top: 25/@r;
+    width: 100%;
+    height: 100/@r;
+    background: white;
+    padding: 0 25/@r;
+    border-bottom: 1px solid #e3d2d2;
+    span{
+      line-height: 100/@r;
+      font-size: 30/@r;
+    }
+  }
+}

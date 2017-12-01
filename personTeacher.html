@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>讲师个人页</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/personTeacher.css">
+    <link rel="stylesheet" href="css/ui.css">
+    <link rel="stylesheet" href="css/friend.css">
+    <link rel="stylesheet" href="font/css/font-awesome.css">
+    <script>
+        window.onload = function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        }
+    </script>
+
+</head>
+<body>
+    <div class="personTeacher-body">
+        <header class="header">
+            <a href="lesson.html" class="home"><i class="fa fa-mail-reply" style="font-size:0.76rem"></i></a>
+            <p class="friend-title" >讲师个人</p>
+            <a href="teacherRecommend.html" class="refresh"><i class="fa fa-comment" style="line-height: 1.9rem"></i></a>
+        </header>
+        <section id="section">
+            <hr>
+            <p class="user"><span class="glyphicon glyphicon-user"></span></p>
+            <p class="user">刘老师</p>
+            <div class="background">
+                <p class="backgroundP person">个人介绍</p>
+            </div>
+            <p class="curry">
+                根据今天早些时候的报道，由于腿伤库里被球队列入了出战成疑名单。
+                库里是在上场与76人的比赛中撞上大腿的，但是他最终选择坚持完成了比赛。
+                本赛季至今，库里共出场13次，场均上场32.3分钟能得到25.2分4.7个篮板6.7次助攻及1.8次抢断。
+            </p>
+            <div class="background">
+                <p class="backgroundP">学术文章</p>
+            </div>
+            <p class="caption">虎扑新闻</p>
+            <p class="curry">
+                根据今天早些时候的报道，由于腿伤库里被球队列入了出战成疑名单。
+                库里是在上场与76人的比赛中撞上大腿的，但是他最终选择坚持完成了比赛。
+                本赛季至今，库里共出场13次，场均上场32.3分钟能得到25.2分4.7个篮板6.7次助攻及1.8次抢断。
+            </p>
+            <div class="background">
+                <p class="backgroundP">课程指导</p>
+            </div>
+            <img src="img/javaEE.jpg" alt="" class="javaEE">
+            <span class="wifi">物联网wifi应用stm32驱动</span>
+            <span class="teacher">讲师 ： 张老师 邱老师 詹老师</span>
+            <p class="onceStar">
+                <span class="span1">即将开始</span>
+                <span class="span2">必修课</span>
+            </p>
+            <p class="threeP threeP1">举办方：福建媒体运营中心</p>
+            <hr>
+            <p class="threeP">即将开始 css样式基础 盒模型</p>
+            <p class="threeP">正在进行 物联网wifi应用stm32驱动</p>
+            <div class="backgroundGrey"></div>
+
+        </section>
+    </div>
+
+</body>
+</html>

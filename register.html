@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>已报名人员分页</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script>
+        window.onload = function () {
+            var html=document.documentElement;
+            var htmlWidth=html.getBoundingClientRect().width;
+            //console.log(htmlWidth);
+            htmlWidth=htmlWidth>750?750:htmlWidth;
+            html.style.fontSize=htmlWidth/15+'px';
+        }
+    </script>
+</head>
+<body>
+  <div class="register-body">
+      <header id="header">
+          <p> < | <a href="lesson.html">上一页</a></p>
+      </header>
+      <section>
+          <div id="hidden">
+              <p id="hide" class="p1"><span class="glyphicon glyphicon-chevron-left"></span>| 已报名人员名单（30人）</p>
+              <ul>
+                  <li>
+                      <div class="hiddenBackground"></div>
+                      <span class="glyphicon glyphicon-user userHead"></span>
+                      <p class="userInformation yeDaLu">叶大陆</p>
+                      <p class="userInformation"><span class="glyphicon glyphicon-phone"></span></p>
+                      <p class="userInformation">报名时间：2011.02.02-2011.02.02</p>
+                  </li>
+                  <li>
+                      <div class="hiddenBackground"></div>
+                      <span class="glyphicon glyphicon-user userHead"></span>
+                      <p class="userInformation yeDaLu">叶大陆</p>
+                      <p class="userInformation"><span class="glyphicon glyphicon-phone"></span></p>
+                      <p class="userInformation">报名时间：2011.02.02-2011.02.02</p>
+                  </li>
+                  <li>
+                      <div class="hiddenBackground"></div>
+                      <span class="glyphicon glyphicon-user userHead"></span>
+                      <p class="userInformation yeDaLu">叶大陆</p>
+                      <p class="userInformation"><span class="glyphicon glyphicon-phone"></span></p>
+                      <p class="userInformation">报名时间：2011.02.02-2011.02.02</p>
+                  </li>
+                  <li>
+                      <div class="hiddenBackground"></div>
+                      <span class="glyphicon glyphicon-user userHead"></span>
+                      <p class="userInformation yeDaLu">叶大陆</p>
+                      <p class="userInformation"><span class="glyphicon glyphicon-phone"></span></p>
+                      <p class="userInformation">报名时间：2011.02.02-2011.02.02</p>
+                  </li>
+              </ul>
+              <div class="background">
+              </div>
+              <p class="p2">已报名学员名单</p>
+          </div>
+      </section>
+  </div>
+
+
+</body>
+</html>
